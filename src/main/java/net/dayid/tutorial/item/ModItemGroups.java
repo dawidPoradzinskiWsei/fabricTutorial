@@ -1,6 +1,7 @@
 package net.dayid.tutorial.item;
 
 import net.dayid.tutorial.Tutorial;
+import net.dayid.tutorial.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -12,6 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     
+
+    // tworzenie grupy ruby
     public static final ItemGroup RUBY_GROUP = Registry.register(
         Registries.ITEM_GROUP,
         new Identifier(Tutorial.MOD_ID, "ruby"),
@@ -22,6 +25,8 @@ public class ModItemGroups {
                     entires.add(ModItems.RUBY);
                     entires.add(ModItems.RAW_RUBY);
                     entires.add(Items.DIAMOND);
+                    entires.add(ModBlocks.RUBY_BLOCK);
+                    entires.add(ModBlocks.RAW_RUBY_BLOCK);
                 }
         ).build()
     );

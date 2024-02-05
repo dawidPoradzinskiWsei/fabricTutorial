@@ -1,5 +1,6 @@
 package net.dayid.tutorial;
 
+import net.dayid.tutorial.block.ModBlocks;
 import net.dayid.tutorial.item.ModItemGroups;
 import net.dayid.tutorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -17,5 +18,6 @@ public class Tutorial implements ModInitializer {
 		
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerBlocks();
 	}
 }
